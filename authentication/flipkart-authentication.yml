@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: https://seller.flipkart.com/api-docs/FMSAPI.html
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - clientCredentials
+  - authorizationCode
+  notes: >-
+    Flipkart Marketplace Seller API v3 is protected with OAuth 2.0. Self-access applications use the
+    client-credentials grant; third-party applications that act on behalf of many sellers use the
+    authorization-code grant. The token endpoint requires HTTP Basic authentication with a
+    Base64-encoded appId:appSecret. Access tokens are valid for ~60 days and refresh tokens for ~180
+    days; expiry can be checked via the oauth-service token/expiry endpoint. Expired tokens return HTTP
+    401.
+schemes:
+- name: OAuth2
+  type: oauth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.flipkart.net/oauth-service/oauth/token
+    usage: self-access applications
+  - flow: authorizationCode
+    authorizationUrl: https://api.flipkart.net/oauth-service/oauth/authorize
+    tokenUrl: https://api.flipkart.net/oauth-service/oauth/token
+    usage: third-party applications acting on behalf of sellers
+  client_authentication: HTTP Basic (Base64 appId:appSecret)
+  token_expiry:
+    access_token_days: 60
+    refresh_token_days: 180
+    expiry_check: https://api.flipkart.net/oauth-service/oauth/token/expiry
+  scopes:
+  - Seller_Api
+  - Default
