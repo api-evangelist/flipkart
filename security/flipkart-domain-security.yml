@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: seller.flipkart.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Aug 29 13:30:06 2026 GMT
+  hsts: false
+- host: api.flipkart.net
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Aug 29 13:36:51 2026 GMT
+  hsts: null
+domains:
+- domain: flipkart.com
+  dnssec: false
+  caa:
+  - 0 issue "globalsign.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issuewild "globalsign.com"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: flipkart.net
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true

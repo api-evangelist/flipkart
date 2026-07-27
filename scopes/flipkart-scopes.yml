@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://seller.flipkart.com/api-docs/FMSAPI.html
+docs: https://seller.flipkart.com/api-docs/FMSAPI.html
+schemes:
+- name: OAuth2
+  source: https://seller.flipkart.com/api-docs/FMSAPI.html
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.flipkart.net/oauth-service/oauth/token
+  - flow: authorizationCode
+    authorizationUrl: https://api.flipkart.net/oauth-service/oauth/authorize
+    tokenUrl: https://api.flipkart.net/oauth-service/oauth/token
+scopes:
+- scope: Seller_Api
+  description: Access to the Flipkart Marketplace Seller APIs (listings, orders, shipments, returns, reports).
+  flows:
+  - clientCredentials
+  - authorizationCode
+- scope: Default
+  description: Default scope granted for basic authenticated access to the seller platform.
+  flows:
+  - clientCredentials
+  - authorizationCode

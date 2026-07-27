@@ -1,8 +1,12 @@
 aid: flipkart
 name: Flipkart
-description: 'Flipkart is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Flipkart is one of India''s largest e-commerce marketplaces, headquartered in Bengaluru
+  and majority-owned by Walmart. For third-party developers and sellers it publishes the Flipkart
+  Marketplace Seller API (v3), an OAuth 2.0 protected REST API hosted at api.flipkart.net that covers
+  listing management, order and shipment management, returns, and report generation, plus an Order
+  Management Notification (webhook) service for order events. Flipkart also runs an affiliate program
+  with its own tooling. This profile captures Flipkart''s public developer surface: the seller API,
+  its OAuth authentication and scopes, conventions, lifecycle, and domain security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/flipkart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +14,99 @@ x-backed-by:
 - softbank-vision-fund
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://logo.clearbit.com/flipkart.com
 tags:
 - Company
 - Consumer
-apis: []
+- E-Commerce
+- Marketplace
+- Retail
+- Sellers
+- Orders
+- Fulfillment
+- India
+- OAuth
+apis:
+- aid: flipkart:flipkart-marketplace-seller-api
+  name: Flipkart Marketplace Seller API
+  description: 'The Flipkart Marketplace Seller API (v3) lets sellers and integration partners manage
+    listings, orders, shipments, returns, and reports on the Flipkart marketplace programmatically.
+    It is a REST API hosted at api.flipkart.net, secured with OAuth 2.0 (client-credentials for
+    self-access apps and authorization-code for third-party apps), and includes an Order Management
+    Notification service for order-event webhooks.'
+  humanURL: https://seller.flipkart.com/api-docs/FMSAPI.html
+  baseURL: https://api.flipkart.net
+  tags:
+  - Marketplace
+  - Sellers
+  - Listings
+  - Orders
+  - Shipments
+  - Returns
+  - Reports
+  - Notifications
+  properties:
+  - url: https://seller.flipkart.com/api-docs/FMSAPI.html
+    type: Documentation
+  - url: https://seller.flipkart.com/api-docs/FMSAPI.html
+    type: APIReference
+  - url: authentication/flipkart-authentication.yml
+    type: Authentication
+  - url: scopes/flipkart-scopes.yml
+    type: OAuthScopes
+common:
+- url: https://seller.flipkart.com/
+  type: DeveloperPortal
+- url: https://seller.flipkart.com/api-docs/FMSAPI.html
+  type: Documentation
+- url: https://seller.flipkart.com/api-docs/FMSAPI.html
+  type: APIReference
+- url: https://seller.flipkart.com/index.html#help/gstin
+  type: Support
+- url: https://seller.flipkart.com/
+  type: SignUp
+- url: https://www.flipkart.com/pages/terms
+  type: TermsOfService
+- url: https://www.flipkart.com/pages/privacypolicy
+  type: PrivacyPolicy
+- url: authentication/flipkart-authentication.yml
+  type: Authentication
+- url: scopes/flipkart-scopes.yml
+  type: OAuthScopes
+- url: conventions/flipkart-conventions.yml
+  type: Conventions
+- url: lifecycle/flipkart-lifecycle.yml
+  type: Lifecycle
+- url: security/flipkart-domain-security.yml
+  type: DomainSecurity
+- url: asyncapi/flipkart-notifications-webhooks.yml
+  type: Webhooks
+- url: mcp/flipkart-mcp.yml
+  type: MCPServer
+- url: llms/flipkart-llms.txt
+  type: LLMsTxt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

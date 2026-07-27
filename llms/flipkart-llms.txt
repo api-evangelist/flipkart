@@ -1,0 +1,23 @@
+# Flipkart
+
+> Flipkart is one of India's largest e-commerce marketplaces (Bengaluru; majority-owned by Walmart). Its public developer surface is the Flipkart Marketplace Seller API (v3), an OAuth 2.0 REST API at api.flipkart.net covering listings, orders/shipments, returns, reports, and an Order Management Notification (webhook) service.
+
+## APIs
+- [Flipkart Marketplace Seller API](https://seller.flipkart.com/api-docs/FMSAPI.html): v3 REST API (base https://api.flipkart.net) for listing, order/shipment, returns, and report management.
+
+## Authentication
+- [OAuth 2.0](https://seller.flipkart.com/api-docs/FMSAPI.html): client-credentials (self-access) and authorization-code (third-party) grants. Token endpoint https://api.flipkart.net/oauth-service/oauth/token. Scopes: Seller_Api, Default.
+
+## Docs
+- [Seller Portal](https://seller.flipkart.com/): developer/seller onboarding and API documentation.
+- [Seller API Reference](https://seller.flipkart.com/api-docs/FMSAPI.html): full FMSAPI reference.
+- [Affiliate Program](https://affiliate.flipkart.com/): Flipkart affiliate program and tooling.
+
+## Artifacts
+- [Authentication profile](authentication/flipkart-authentication.yml)
+- [OAuth scopes](scopes/flipkart-scopes.yml)
+- [Conventions](conventions/flipkart-conventions.yml)
+- [Lifecycle](lifecycle/flipkart-lifecycle.yml)
+- [Webhooks (Order Management Notifications)](asyncapi/flipkart-notifications-webhooks.yml)
+- [Domain security](security/flipkart-domain-security.yml)
+- [MCP (candidate)](mcp/flipkart-mcp.yml)

@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://seller.flipkart.com/api-docs/FMSAPI.html
+api: flipkart:flipkart-marketplace-seller-api
+conventions:
+  authentication:
+    style: oauth2
+    detail: >-
+      OAuth 2.0 bearer token in the Authorization header. Client-credentials for self-access apps;
+      authorization-code for third-party apps. See authentication/flipkart-authentication.yml.
+  base_url: https://api.flipkart.net
+  versioning:
+    style: uri-path
+    current: v3
+    example: /sellers/v3/shipments/filter
+  error_handling:
+    style: http-status
+    detail: >-
+      Errors are signalled with standard HTTP status codes; an expired or invalid access token returns
+      401. A dedicated response-codes reference is published in the seller API docs.
+    reference: https://seller.flipkart.com/api-docs/FMSAPI.html
+  idempotency:
+    supported: false
+    notes: No idempotency-key header is documented in the public Flipkart Marketplace Seller API docs.
+  pagination:
+    documented: false
+    notes: >-
+      Filter-based endpoints (e.g. shipments/filter) accept JSON filter payloads; explicit
+      cursor/offset pagination parameters are not documented in the public overview.
+  webhooks:
+    supported: true
+    detail: >-
+      Order Management Notification Service delivers order-event notifications to registered seller
+      endpoints. See asyncapi/flipkart-notifications-webhooks.yml.
+  rate_limiting:
+    documented: false

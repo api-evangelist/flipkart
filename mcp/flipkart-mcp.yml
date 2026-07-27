@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: https://seller.flipkart.com/api-docs/FMSAPI.html
+notes: >-
+  No official hosted/remote Flipkart MCP server was found. This is a candidate tool list derived from
+  the publicly documented Flipkart Marketplace Seller API surface. Names are proposals; the seller API
+  does not publish an OpenAPI spec, so operations are described from the docs, not verified operationIds.
+server:
+  name: flipkart
+  transport: http
+tools:
+- name: filter_shipments
+  description: Filter shipments/orders by criteria (POST /sellers/v3/shipments/filter).
+  source_operation: https://api.flipkart.net/sellers/v3/shipments/filter
+- name: manage_listings
+  description: Create and manage marketplace listings (Listing Management API).
+  source_operation: https://seller.flipkart.com/api-docs/FMSAPI.html
+- name: manage_orders
+  description: Retrieve and act on orders and shipments (Order Management API).
+  source_operation: https://seller.flipkart.com/api-docs/FMSAPI.html
+- name: generate_report
+  description: Generate and retrieve seller reports (Report Management API).
+  source_operation: https://seller.flipkart.com/api-docs/FMSAPI.html
+- name: check_token_expiry
+  description: Check OAuth access/refresh token validity (oauth-service token/expiry).
+  source_operation: https://api.flipkart.net/oauth-service/oauth/token/expiry

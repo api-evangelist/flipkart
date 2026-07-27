@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://seller.flipkart.com/api-docs/FMSAPI.html
+type: Webhooks
+api: flipkart:flipkart-marketplace-seller-api
+service: Order Management Notification Service
+summary: >-
+  The Flipkart Marketplace Seller API includes an Order Management Notification Service that pushes
+  order-lifecycle event notifications to a seller-registered HTTP endpoint. The seller docs publish an
+  "Order Management Notification Reference" describing the notification payloads. Specific event names
+  and payload schemas are documented behind the seller portal; only the presence and shape of the
+  webhook surface is captured here (no fabricated event catalog).
+webhooks:
+  delivery: http-callback
+  registration: seller portal / notification configuration
+  reference: https://seller.flipkart.com/api-docs/FMSAPI.html
+  events:
+  - domain: orders
+    description: Order and shipment lifecycle events delivered via the Order Management Notification Service.
