@@ -2,10 +2,9 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: https://seller.flipkart.com/api-docs/FMSAPI.html
-notes: >-
-  No official hosted/remote Flipkart MCP server was found. This is a candidate tool list derived from
-  the publicly documented Flipkart Marketplace Seller API surface. Names are proposals; the seller API
-  does not publish an OpenAPI spec, so operations are described from the docs, not verified operationIds.
+notes: No official hosted/remote Flipkart MCP server was found. This is a candidate tool list derived
+  from the publicly documented Flipkart Marketplace Seller API surface. Names are proposals; the seller
+  API does not publish an OpenAPI spec, so operations are described from the docs, not verified operationIds.
 server:
   name: flipkart
   transport: http
@@ -25,3 +24,9 @@ tools:
 - name: check_token_expiry
   description: Check OAuth access/refresh token validity (oauth-service token/expiry).
   source_operation: https://api.flipkart.net/oauth-service/oauth/token/expiry
+deployment:
+  mode: none
+  verified: derived
+  tools: 5
+  checked: '2026-08-12'
+  source: catalog MCP census
