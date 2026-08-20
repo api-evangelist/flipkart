@@ -37,6 +37,17 @@ tags:
 - Marketplace
 - Retail
 - Sellers
+- Order
+- Fulfillment
+- India
+- Authentication
+tags_raw:
+- Company
+- Consumer
+- E-Commerce
+- Marketplace
+- Retail
+- Sellers
 - Orders
 - Fulfillment
 - India
@@ -52,6 +63,15 @@ apis:
   humanURL: https://seller.flipkart.com/api-docs/FMSAPI.html
   baseURL: https://api.flipkart.net
   tags:
+  - Marketplace
+  - Sellers
+  - Listings
+  - Order
+  - Shipments
+  - Returns
+  - Reports
+  - Notification
+  tags_raw:
   - Marketplace
   - Sellers
   - Listings
