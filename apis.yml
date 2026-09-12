@@ -101,6 +101,8 @@ apis:
   - url: scopes/flipkart-scopes.yml
     type: OAuthScopes
 common:
+- type: Website
+  url: https://www.flipkart.com/
 - url: https://seller.flipkart.com/
   type: DeveloperPortal
 - url: https://seller.flipkart.com/api-docs/FMSAPI.html
