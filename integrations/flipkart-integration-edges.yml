@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/flipkart/integrations
+- https://n8n.io/integrations/flipkart/
+- https://composio.dev/toolkits/flipkart
+- https://monid.ai/tools/flipkart
+checked:
+- https://composio.dev/toolkits/flipkart
+- https://monid.ai/tools/flipkart
+- https://n8n.io/integrations/flipkart/
+- https://zapier.com/apps/flipkart/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
